@@ -43,7 +43,7 @@ body {
 }
 
 .hero__button {
-    display: none;
+    padding-top: 40px;
 }
 
 .button-primary {
