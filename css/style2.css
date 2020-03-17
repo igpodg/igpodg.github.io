@@ -1,0 +1,403 @@
+body {
+    color: #333;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans",
+        sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+}
+
+.container {
+    max-width: 1450px !important;
+}
+
+.navbar .container .navbar-list .logo-filler {
+    width: 50%;
+    height: 109px;
+    background-image: url("../assets/goodday2.png");
+    background-size: contain;
+    padding-left: 100px !important;
+    padding-right: 50px !important;
+}
+
+.navbar .container .navbar-list .logo-filler2 {
+    padding-left: 100px !important;
+    visibility: hidden;
+}
+
+.hero__right {
+    margin-top: 15% !important;
+}
+
+.content {
+    padding-top: 49px;
+}
+
+.navbar {
+    display: none;
+}
+
+.hero {
+    padding-bottom: 30px;
+}
+
+.hero__left {
+    margin-top: 10%;
+}
+
+.hero__button {
+    display: none;
+}
+
+.button-primary {
+    background-color: #00A3F0 !important;
+    border-color: #00A3F0 !important;
+}
+
+.button-primary:focus, .button-primary:hover {
+    background-color: #0084F0 !important;
+    border-color: #0084F0 !important;
+}
+
+.footer {
+    padding-bottom: 40px;
+    text-align: center;
+}
+
+.hero2 {
+    padding-bottom: 0 !important;
+}
+
+.footer-logo {
+    width: 60%;
+}
+
+.button-primary {
+    letter-spacing: normal !important;
+    text-transform: initial !important;
+    font-size: 15px !important;
+}
+
+/* Larger than tablet */
+@media (min-width: 750px) {
+    .footer-logo {
+        display: none;
+    }
+
+    .deskcont {
+        padding-left: 250px;
+    }
+
+    .phone-br {
+        display: none;
+    }
+
+    .section__history {
+        padding-top: 40px;
+        padding-bottom: 120px;
+    }
+
+    .section__history--pic {
+        margin-top: 7rem;
+    }
+
+    .section__content {
+        min-height: calc(100vh - 6.5rem - 86px - 94px - 4px);
+    }
+
+    .tabbar {
+        display: none !important;
+    }
+
+    .content {
+        padding-bottom: 0;
+        padding-top: 95px;
+
+        min-height: calc(100vh - 6.5rem - 86px - 94px - 4px);
+    }
+
+    .footer {
+        display: block;
+        padding-bottom: initial;
+
+        /* margin-top: 80px; */
+        color: #777;
+        text-align: center;
+        font-size: 80%;
+
+        background: #fff;
+        z-index: 99;
+        border-top: 1px solid #ddd;
+        border-bottom: 1px solid #ddd;
+        height: 86px;
+        line-height: 86px;
+
+        -webkit-box-shadow: 0 100px 220px gray;
+        -moz-box-shadow: 0 100px 220px gray;
+        box-shadow: 0 100px 220px gray;
+    }
+
+    .hero {
+        padding-bottom: 120px;
+    }
+
+    .hero__left {
+        margin-top: 16%;
+    }
+
+    .hero__right {
+        margin-top: 16%;
+    }
+
+    .hero__button {
+        display: block;
+        padding-top: 70px;
+    }
+
+    /* Navbar */
+    .navbar {
+        -webkit-box-shadow: 0 -100px 220px gray;
+        -moz-box-shadow: 0 -100px 220px gray;
+        box-shadow: 0 -100px 220px gray;
+    }
+
+    .navbar .container {
+        transform: translateX(-17px);
+    }
+
+    .navbar + .docs-section {
+        border-top-width: 0;
+    }
+    .navbar, .navbar-spacer {
+        display: block;
+        width: 100%;
+        height: 6.5rem;
+        background: #fff;
+        z-index: 99;
+        border-top: 1px solid #eee;
+        border-bottom: 1px solid #eee;
+    }
+    .navbar-spacer {
+        display: none;
+    }
+    .navbar > .container {
+        /* width: 100%; */
+    }
+    .navbar-list {
+        list-style: none;
+        margin-bottom: 0;
+    }
+    .navbar-item {
+        position: relative;
+        float: left;
+        margin-bottom: 0;
+    }
+    .navbar-link {
+        text-transform: uppercase;
+        font-size: 11px;
+        font-weight: 600;
+        letter-spacing: .2rem;
+        /* margin-right: 35px; */
+        padding: 32px 17px;
+        text-decoration: none;
+        line-height: 6.5rem;
+        color: #222;
+    }
+    .navbar-link.active {
+        color: #33C3F0;
+    }
+    .has-docked-nav .navbar {
+        position: fixed;
+        top: 0;
+        left: 0;
+    }
+    .has-docked-nav .navbar-spacer {
+        display: block;
+    }
+    /* Re-overiding the width 100% declaration to match size of % based container */
+    .has-docked-nav .navbar > .container {
+        width: 80%;
+    }
+
+    .navbar-right {
+        float: right;
+    }
+
+    .respvideo iframe {
+        width: 560px;
+        height: 315px;
+    }
+}
+
+/* TABBAR */
+
+.tabbar {
+    font-family: -apple-system,Helvetica Neue,Helvetica,Arial,Lucida Grande,sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    font-weight: 400;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: flex;
+    /* position: absolute; */
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    white-space: nowrap;
+    margin: 0;
+    padding: 0;
+    height: 49px;
+    background-color: #fafafa;
+    border-top: 1px solid #ccc;
+    width: 100%;
+
+    -webkit-box-shadow: 0 40px 220px gray;
+    -moz-box-shadow: 0 40px 220px gray;
+    box-shadow: 0 0px 18px gray;
+}
+
+.tabbar__item {
+    font-family: -apple-system,Helvetica Neue,Helvetica,Arial,Lucida Grande,sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    font-weight: 400;
+    position: relative;
+    -webkit-box-flex: 1;
+    -webkit-flex-grow: 1;
+    flex-grow: 1;
+    -webkit-flex-basis: 0;
+    flex-basis: 0;
+    width: auto;
+    border-radius: 0;
+}
+
+.tabbar__button {
+    font-family: -apple-system,Helvetica Neue,Helvetica,Arial,Lucida Grande,sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    box-sizing: border-box;
+    background-clip: padding-box;
+    font: inherit;
+    background: transparent;
+    border-style: none;
+    cursor: default;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+    position: relative;
+    display: inline-block;
+    text-decoration: none;
+    height: 49px;
+    letter-spacing: 0;
+    color: #999;
+    font-weight: 400;
+    line-height: 49px;
+
+    padding: 0;
+    vertical-align: top;
+    width: 100%;
+    margin: 0;
+}
+
+.tabbar__button:hover {
+    color: #999;
+}
+
+.tabbar__button:focus {
+    color: #999;
+}
+
+.tabbar__button.selected {
+    color: #333;
+}
+
+.tabbar__icon {
+    font-family: icomoon;
+    font-size: 24px;
+    padding: 0;
+    margin: 0;
+    line-height: 26px;
+    display: block !important;
+    height: 28px;
+}
+
+.tabbar__icon + .tabbar__label {
+    display: block;
+    font-size: 10px;
+    line-height: 1;
+    margin: 0;
+    font-weight: 400;
+
+    text-transform: initial;
+}
+
+.newsitem__date {
+    height: 30px;
+    line-height: 30px;
+    text-align: center;
+    /* border: 2px dashed; */
+}
+
+.buttons {
+    margin-left: 40px;
+}
+
+.button__download {
+    height: 200px;
+    line-height: initial;
+    letter-spacing: initial;
+    text-transform: initial;
+    font-size: initial;
+
+    padding-left: 0;
+    padding-right: 0;
+
+    width: 200px;
+}
+
+.rawlink {
+    word-break: break-all;
+}
+
+.content-shadow {
+    box-shadow: 20px 21px 100px -14px rgba(0,0,0,0.7);
+}
+
+/* Larger than phablet */
+@media (min-width: 550px) {
+    .section__content--item {
+        display: flex;
+    }
+
+    .section__content--item--title {
+        order: 1;
+        flex-basis: 65.3333333333%;
+    }
+
+    .section__content--item--title--left {
+        order: 2;
+        flex-basis: 65.3333333333%;
+    }
+
+    .section__content--item--pic {
+        order: 2;
+        flex-basis: 30.6666666667%;
+    }
+
+    .section__content--item--pic--left {
+        order: 1;
+        flex-basis: 30.6666666667%;
+    }
+
+    .section__content--item--pic .content-item-size {
+        max-width: 280px !important;
+        margin-left: 15px;
+    }
+
+    .section__content--item--pic--left .content-item-size {
+        max-width: 280px !important;
+        margin-right: 15px;
+    }
+}
